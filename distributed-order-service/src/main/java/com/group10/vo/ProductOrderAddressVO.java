@@ -3,56 +3,51 @@ package com.group10.vo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-
-
-
 @Data
 public class ProductOrderAddressVO {
-
 
     private Long id;
 
     /**
-     * 用户id
+     * User ID
      */
     private Long userId;
 
     /**
-     * 是否默认收货地址：0->否；1->是
+     * Whether it is the default shipping address: 0->No; 1->Yes
      */
     @JsonProperty("default_status")
     private Integer defaultStatus;
 
     /**
-     * 收发货人姓名
+     * Recipient's name
      */
     @JsonProperty("receiver_name")
     private String receiverName;
 
     /**
-     * 收货人电话
+     * Recipient's phone number
      */
     private String phone;
 
     /**
-     * 省/直辖市
+     * Province/city directly under the central government
      */
     private String state;
 
     /**
-     * 市
+     * City
      */
     private String city;
 
     /**
-     * 区
+     * District
      */
     private String district;
 
     /**
-     * 详细地址
+     * Detailed address
      */
-
     @JsonProperty("detailed_address")
     private String detailedAddress;
 }
