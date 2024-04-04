@@ -12,39 +12,37 @@ import java.math.BigDecimal;
 public class PayInfoVO {
 
     /**
-     * 订单号
+     * Order number
      */
     private String outTradeNo;
 
     /**
-     * 订单总金额
+     * Total amount of the order
      */
     private BigDecimal payFee;
 
     /**
-     * 支付类型 微信-支付宝-银行-其他
+     * Payment type: WeChat - Alipay - Bank - Other
      */
     private String payType;
 
     /**
-     * 端类型 APP/H5/PC
+     * Client type: APP/H5/PC
      */
     private String clientType;
 
     /**
-     * 标题
+     * Title
      */
     private String title;
 
     /**
-     * 描述
+     * Description
      */
     private String description;
 
-
     /**
-     * 订单支付超时时间，毫秒
+     * Order payment timeout, in milliseconds
      */
     private long orderPayTimeoutMills;
-
 }
